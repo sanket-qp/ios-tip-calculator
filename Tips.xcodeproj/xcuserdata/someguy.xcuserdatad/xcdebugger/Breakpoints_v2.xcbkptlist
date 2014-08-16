@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tips/ViewController.swift"
-            timestampString = "429905054.072092"
+            timestampString = "429907004.810784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "setupUI()"
             landmarkType = "5">
          </BreakpointContent>
@@ -91,11 +91,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tips/ViewController.swift"
-            timestampString = "429905054.072092"
+            timestampString = "429907004.810784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "calculate()"
             landmarkType = "5">
          </BreakpointContent>

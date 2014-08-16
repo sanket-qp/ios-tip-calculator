@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     
     @IBAction func numOfPeopleChanged(sender: AnyObject) {
         
-        setupUI()
+        numOfPeopleLabel.text = "\(Int(numOfPeopleSlider.value))"
         calculate()
     }
     
