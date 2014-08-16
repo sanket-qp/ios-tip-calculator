@@ -39,7 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let now = CFAbsoluteTimeGetCurrent()
         let lastUsed = calculator.getLastUsed()
         //TODO :: use constants and config file for saving number of minutes
-        println(now - lastUsed)
         if (now - lastUsed > 600) {
         
             calculator.clearLastBillAmount()
