@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>766B45BA-0108-4D06-BC87-E8B0E289B14A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tips</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CEFEE2D99B923DCAC0427914A673F3FC17D15FF1</key>
+		<string>https://github.com/sanket-qp/ios-tip-calculator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Tips.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CEFEE2D99B923DCAC0427914A673F3FC17D15FF1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sanket-qp/ios-tip-calculator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CEFEE2D99B923DCAC0427914A673F3FC17D15FF1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CEFEE2D99B923DCAC0427914A673F3FC17D15FF1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-tip-calculator</string>
+		</dict>
+	</array>
+</dict>
+</plist>
