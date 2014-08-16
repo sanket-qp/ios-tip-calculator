@@ -32,12 +32,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-
     @IBAction func onEditingChanged(sender: AnyObject) {
-        
-        calculate()
 
+        calculate()
     }
+    
     @IBAction func onSettingsClicked(sender: AnyObject) {
         
     }
@@ -83,7 +82,8 @@ class ViewController: UIViewController {
     func setupUI() {
     
         tipLabel.text = "$0.00"
-        totalLabel.text = "$0.00"
+        totalLabel.text = ""
+        perPersonLabel.text = "$0.00"
         
         // populate tipControl
         let possibleTips = calculator.getPossibleTips()
@@ -104,15 +104,15 @@ class ViewController: UIViewController {
 
         // calculate tip and set the labels
         let chosenTip = calculator.getTipPercentageForIndex(tipControl.selectedSegmentIndex)
-        var billAmount = Double((billField.text as NSString).doubleValue)
+        var billAmount = calculator.getNumberFromCurrencyFormat(billField.text)
         let (tip, total) = calculator.calculateTip(billAmount, tipPercentage: chosenTip)
         
         let numOfPeople = Int(numOfPeopleSlider.value)
         let perPerson = total/Double(numOfPeople)
         
-        tipLabel.text = String(format: "$%0.2f", tip)
-        totalLabel.text = String(format: "$%0.2f", total)
-        perPersonLabel.text = String(format: "$%0.2f", perPerson)
+        tipLabel.text = calculator.getInCurrencyFormat(tip)
+        totalLabel.text = calculator.getInCurrencyFormat(total)
+        perPersonLabel.text = calculator.getInCurrencyFormat(perPerson)
         calculator.setLastBillAmount(billField.text)
     }
 }

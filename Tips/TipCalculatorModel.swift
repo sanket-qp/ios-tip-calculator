@@ -24,6 +24,13 @@ class TipCalculatorModel {
         "20%": 0.20,
         "25%": 0.25
     ]
+
+    var nf = NSNumberFormatter()
+    init() {
+    
+        nf.numberStyle = NSNumberFormatterStyle.CurrencyStyle
+        nf.maximumFractionDigits = 2
+    }
     
     func getPossibleTips() -> [String] {
     
@@ -143,4 +150,18 @@ class TipCalculatorModel {
         return lastUsed
     }
     
+    func getInCurrencyFormat(n: Double) -> String {
+        
+        var x = nf.stringFromNumber(n)
+        getNumberFromCurrencyFormat(x)
+        return nf.stringFromNumber(n)
+    }
+    
+    func getNumberFromCurrencyFormat(str: String) -> Double {
+    
+        //TODO:: must be better way, consider using regex
+        var newStr = str.stringByReplacingOccurrencesOfString(",", withString: "")
+        newStr = newStr.stringByReplacingOccurrencesOfString("$", withString: "")
+        return Double((newStr as NSString).doubleValue)
+    }
 }
